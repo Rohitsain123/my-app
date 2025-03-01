@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "avantt serif";
+    src: url('./../avantt-font-family-1739582482-0/AvanttTRIALVF-BF6721a86b223dc.ttf');
+}
+
+.roboto {
+    font-family: "Roboto Mono", serif;
+}
+
+body {
+    font-family: "avantt serif";
+}
+
+.accordion-button {
+    transition: transform 0.6s ease;
+}
+
+.accordion-button.rotate {
+    transform: rotate(135deg);
+}
+
+.grad {
+    background: linear-gradient(180deg, #FFA280 0%, #8FD9CB 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section {
+    overflow: hidden;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 570px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 570px;
+}
+
+.gmap_iframe {
+    height: 570px !important;
+}
