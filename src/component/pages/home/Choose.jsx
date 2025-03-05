@@ -1,3 +1,5 @@
+import H5heading from '@/component/common/H5heading'
+import { PlusIcon } from '@/component/helper/Icon'
 import Image from 'next/image'
 import React from 'react'
 
@@ -10,46 +12,46 @@ function Choose() {
             <div className='flex flex-wrap md:flex-nowrap gap-[70px] mt-[10px] md:mt-[45px]'>
                     <div className="mt-[59px] max-w-[600px] w-full">
                         <div className="flex justify-between pb-[32px]">
-                            <h5 className="text-base md:text-xl lg:text-2xl text-[#D7D9DD] ">Cutting-Edge Technology</h5>
+                           <H5heading h5heading={"Cutting-Edge Technology"}/>
                             <div className="max-w-[24px] sm:max-w-[30px]    ">
-                                <Image src={"/assetes/img/png/plus.png"} width={30} height={30} alt={"plus"}/>
+                               <PlusIcon/>
                             </div>
                         </div>
                         <div className="w-full h-0.5 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div>
                         <div className="flex justify-between pb-[32px] mt-[32px]">
-                            <h5 className="text-base md:text-xl lg:text-2xl text-[#D7D9DD] ">Independant</h5>
+                           <H5heading h5heading={"Independant"}/>
                             <div className="max-w-[24px] sm:max-w-[30px]    ">
-                                <Image src={"/assetes/img/png/plus.png"} width={30} height={30} alt={"plus"}/>
+                                <PlusIcon/>
                             </div>
                         </div>
                         <div className="w-full h-0.5 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div>
                         <div className="flex justify-between pb-[32px] mt-[32px]">
-                            <h5 className="text-base md:text-xl lg:text-2xl text-[#D7D9DD] ">Progressive Medicine</h5>
+                           <H5heading h5heading={"Progressive Medicine"}/> 
                             <div className="max-w-[24px] sm:max-w-[30px]    ">
-                                <Image src={"/assetes/img/png/plus.png"} width={30} height={30} alt={"plus"}/>
+                               <PlusIcon/>
                             </div>
                         </div>
                         <div className="w-full h-0.5 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div>
                     </div>
                     <div className="mt-[-32px] md:mt-[59px] max-w-[600px] w-full">
                         <div className="flex justify-between pb-[32px]">
-                            <h5 className="text-base md:text-xl lg:text-2xl text-[#D7D9DD] ">Environmentally conscious​</h5>
+                            <H5heading h5heading={"Environmentally conscious​"}/>
                             <div className="max-w-[24px] sm:max-w-[30px]    ">
-                                <Image src={"/assetes/img/png/plus.png"} width={30} height={30} alt={"plus"}/>
+                               <PlusIcon/>
                             </div>
                         </div>
                         <div className="w-full h-0.5 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div>
                         <div className="flex justify-between pb-[32px] mt-[32px]">
-                            <h5 className="text-base md:text-xl lg:text-2xl text-[#D7D9DD] ">Expert Team</h5>
+                            <H5heading h5heading={"Expert Team"}/>
                             <div className="max-w-[24px] sm:max-w-[30px]    ">
-                                <Image src={"/assetes/img/png/plus.png"} width={30} height={30} alt={"plus"}/>
+                               <PlusIcon/>
                             </div>
                         </div>
                         <div className="w-full h-0.5 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div>
                         <div className="flex justify-between pb-[32px] mt-[32px]">
-                            <h5 className="text-base md:text-xl lg:text-2xl text-[#D7D9DD] ">Education</h5>
+                          <H5heading h5heading={"Education"}/>
                             <div className="max-w-[24px] sm:max-w-[30px]    ">
-                                <Image src={"/assetes/img/png/plus.png"} width={30} height={30} alt={"plus"}/>
+                               <PlusIcon/>
                             </div>
                         </div>
                         <div className="w-full h-0.5 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div>

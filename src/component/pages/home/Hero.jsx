@@ -13,9 +13,7 @@ function Hero() {
                 <div className=' pt-[250px] lg:pt-[200px] pb-[60px] lg:pb-[85px]'>
                 <Mainheading mainheading={"Welcome to Nebula Vets"}/>
                      <Para para={"Reinventing Pet Medicine"}/>
-                    <div className='mt-[25px] lg:mt-[45px]'>
-                        <Link href={'/'} className='text-lg font-medium rounded-[27px] text-[#494336] py-2 sm:py-3  px-6 sm:px-8 lg:px-[38px] bg-[linear-gradient(90deg,#FFA280_0%,#8FD9D9_100%)] hover:shadow-lg !shadow-slate-500/60  duration-300 hover:scale-[1.02]' >BOOK NOW</Link>
-                    </div>
+                    <Booklink booklink={"BOOK NOW"}/>
                 </div>
             </div>
         </div>
