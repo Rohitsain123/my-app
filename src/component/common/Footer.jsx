@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Booklink from './Booklink'
 
 function Footer() {
   return (
@@ -19,10 +20,7 @@ function Footer() {
                     veterinary care, driven
                     by an unwavering
                     ethical conscience.</p>
-                <div className="mt-[38px] lg:mt-[45px]">
-                    <Link className="text-[#494336] text-sm md:text-lg font-medium bg-[white] py-[8px] lg:py-[12px] px-[18px] lg:px-[37px] rounded-[27px] bg-gradient-to-r from-[#FFA280]  to-[#8FD9D9] hover:from-[#8FD9D9] hover:to-[#FFA280] duration-300 transition roboto "
-                        href={"#"}>BOOK NOW</Link>
-                </div>
+               <Booklink booklink={"BOOK NOW"}/>
             </div>
         </div>
         <div className="bg-[#494336]  border-t-[2px] w-[100%] border-solid border-[#D8DADC]">
