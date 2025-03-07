@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import Booklink from './Booklink'
 import { NavbarLogo, NavbarLogoIcon } from '../helper/Icon'
+import { navLink } from '../helper/Helper'
 
 function Navbar() {
   return (
@@ -15,23 +16,9 @@ function Navbar() {
                         </Link></div>
                         <div>
                             <ul className="list-none justify-between lg:flex gap-[40px] hidden aligin-center">
-                                <li><Link href={"/services"}
-                                        className="text-white Roboto-font text-sm hover:text-transparent bg-clip-text bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300 duration-300 font-medium tracking-[1.4px]">SERVICES</Link>
-                                </li>
-                                <li><Link  href={"/"}
-                                        className="text-white Roboto-font text-sm hover:text-transparent bg-clip-text bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300 duration-300 font-medium tracking-[1.4px]">ABOUT
-                                        US</Link>
-                                </li>
-                                <li><Link href={"/"}
-                                        className="text-white Roboto-font text-sm hover:text-transparent bg-clip-text bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300 duration-300 font-medium tracking-[1.4px]">LOCATION</Link>
-                                </li>
-                                <li><Link href={"/"}
-                                        className="text-white Roboto-font text-sm hover:text-transparent bg-clip-text bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300 duration-300 font-medium tracking-[1.4px]">CAREER</Link>
-                                </li>
-                                <li><Link href={"/"}
-                                        className="text-white Roboto-font text-sm hover:text-transparent bg-clip-text bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300 duration-300 font-medium tracking-[1.4px]">PATIENT
-                                        PORTAL</Link>
-                                </li>
+                               {navLink.map((item,index)=>(<li key={index}><Link  href={item.path}
+                                        className="text-white uppercase Roboto-font text-sm hover:text-transparent bg-clip-text bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300 duration-300 font-medium tracking-[1.4px]">{item.link}</Link>
+                                </li>))}
                                 <li>
                                     <Link href={'/'} className='text-lg font-medium rounded-[27px] text-[#494336] py-2 sm:py-3  px-6 sm:px-8 lg:px-[38px] bg-[linear-gradient(90deg,#FFA280_0%,#8FD9D9_100%)] hover:shadow-lg !shadow-slate-500/60  duration-300 hover:scale-[1.02]' >BOOK NOW</Link>
                                 </li>
