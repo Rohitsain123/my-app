@@ -9,7 +9,7 @@ import {
   Footerlinkedin,
   InstaIcon,
 } from "../helper/Icon";
-import { footerIcon, footerlink } from "../helper/Helper";
+import { footerdata, footerIcon, footerlink } from "../helper/Helper";
 
 function Footer() {
   return (
@@ -54,7 +54,7 @@ function Footer() {
                   {footerlink.map((item, index) => (
                     <div key={index}>
                       <Link
-                        className="text-[#D7D9DD] text-sm sm:text-base underline hover:text-transparent bg-clip-text bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300"
+                        className="text-[#D7D9DD] text-sm sm:text-base underline hover:text-transparent bg-clip-text  bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300"
                         href={item.path}
                       >
                         {item.title}
@@ -68,18 +68,16 @@ function Footer() {
                   Company
                 </p>
                 <div className="flex flex-col gap-[7px]">
-                  <Link
-                    className="text-[#D7D9DD] text-sm sm:text-base underline hover:text-transparent bg-clip-text bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300"
-                    href={"/About.html"}
-                  >
-                    About us
-                  </Link>
-                  <Link
-                    className="text-[#D7D9DD] text-sm sm:text-base underline hover:text-transparent bg-clip-text bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300"
-                    href={"/Join.html"}
-                  >
-                    Carreers
-                  </Link>
+                  {footerdata.map((item, index) => (
+                    <div key={index}>
+                      <Link
+                        className="text-[#D7D9DD] text-sm sm:text-base underline hover:text-transparent bg-clip-text bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300"
+                        href={item.path}
+                      >
+                        {item.title}
+                      </Link>
+                    </div>
+                  ))}
                 </div>
               </div>
               <div className="flex flex-col gap-[10px] md:gap-[30px] xl:ml-[57px] xl:mr-[145px]">

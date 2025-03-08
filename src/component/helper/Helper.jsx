@@ -1,4 +1,10 @@
-import { FacebookIcon, InstaIcon, LinkedinIcon } from "./Icon";
+import {
+  FacebookIcon,
+  InstaIcon,
+  LinkedinIcon,
+  DogIcon,
+  CatIcon,
+} from "./Icon";
 
 export const navLink = [
   {
@@ -30,6 +36,16 @@ export const footerIcon = [
   { icon: <LinkedinIcon />, path: "/" },
   { icon: <InstaIcon />, path: "/" },
 ];
+export const vaccinateIcon = [
+  {
+    icon: <DogIcon />,
+    path: "/",
+  },
+  {
+    icon: <CatIcon />,
+    path: "/,",
+  },
+];
 export const footerlink = [
   {
     title: "Preventive Care",
@@ -48,20 +64,27 @@ export const footerlink = [
     path: "Additional Services",
   },
 ];
-export const serviceleftData = [
+export const footerdata = [
   {
-    img: "",
-    title: "",
-    subheading: "",
-    para: "",
-    btnname: "",
+    title: "About us",
+    path: "About us",
+  },
+  {
+    title: "Carreers",
+    path: "About us",
   },
 ];
-
-export const servicerightData = [
+export const accordianData = [
   {
-    title: "",
+    title: "Core Dog Vaccines",
+    para: "lorem ienfif kdcirfirv jndiewnmvuif csdvbafhuin weuhweuifsmcn deubdv",
+  },
+  {
+    title: "Non-Core Dog Vaccines",
     para: "",
-    btnname: "",
+  },
+  {
+    title: "Core Cat Vaccines",
+    para: "",
   },
 ];
