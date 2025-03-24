@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Booklink from "./Booklink";
 import { NavbarLogo, NavbarLogoIcon } from "../helper/Icon";
 import { navLink } from "../helper/Helper";
 

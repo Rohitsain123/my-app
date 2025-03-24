@@ -2,28 +2,42 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-function HeroCommon({ heroimg, title, para, btnname, className }) {
+function HeroCommon({
+  heroimg,
+  title,
+  para,
+  btnname,
+  titleClass,
+  imgClass,
+  para2,
+  p2Class,
+}) {
   return (
     <>
       <div className="bg-[#494336] pt-[130px] lg:pt-[250px] pb-[260px] lg:pb-[85px] relative">
-        <div
-          className={`absolute bottom-0 end-0 w-full max-w-[653px] ${className}`}
-        >
+        <div className={`absolute bottom-0 end-0 w-full  ${imgClass}`}>
           <Image
             className="w-full"
             src={heroimg}
-            width={653}
-            height={426}
+            width={500}
+            height={500}
             alt={"hero"}
           />
         </div>
-        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px]">
+        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto">
           <div className="max-w-[660px]">
-            <h1 className="text-[32px] md:text-5xl lg:text-[70px] text-[#D7D9DD]">
+            <h1
+              className={`text-[32px] md:text-5xl lg:text-[70px] text-[#D7D9DD] ${titleClass}`}
+            >
               {title}
             </h1>
             <p className="text-sm md:text-base lg:text-xl text-[#D7D9DD] mt-[20px]">
               {para}
+            </p>
+            <p
+              className={`text-sm md:text-base lg:text-xl text-[#D7D9DD] mt-[20px] ${p2Class}`}
+            >
+              {para2}
             </p>
             <div className="mt-[25px] lg:mt-[45px]">
               <Link

@@ -13,7 +13,6 @@ import React from "react";
 function page() {
   return (
     <>
-      <Navbar />
       <Hero />
       <Mission />
       <Choose />
@@ -21,7 +20,6 @@ function page() {
       <Slider />
       <About />
       <OurMission />
-      <Footer />
     </>
   );
 }

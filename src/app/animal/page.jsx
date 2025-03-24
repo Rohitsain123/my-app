@@ -12,13 +12,11 @@ import React from "react";
 function page() {
   return (
     <>
-      <Navbar />
       <Hero />
       <Exam />
       <Why />
       <Experince />
       <Forword />
-      <Footer />
     </>
   );
 }

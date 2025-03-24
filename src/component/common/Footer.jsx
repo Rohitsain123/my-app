@@ -9,7 +9,15 @@ import {
   Footerlinkedin,
   InstaIcon,
 } from "../helper/Icon";
-import { footerdata, footerIcon, footerlink } from "../helper/Helper";
+import {
+  footerdata,
+  footerIcon,
+  footerlink,
+  footerlinkData,
+} from "../helper/Helper";
+import H5heading from "./H5heading";
+import Para from "./Para";
+import Para2 from "./Para2";
 
 function Footer() {
   return (
@@ -31,21 +39,33 @@ function Footer() {
                 id="email"
                 placeholder="Email"
               />
-              <div className="flex gap-5 mt-[15px] md:mt-[22px]">
-                {footerIcon.map((item, index) => (
+              <div className="flex gap-10">
+                <div className="flex gap-5 mt-[15px] md:mt-[22px]">
+                  {footerIcon.map((item, index) => (
+                    <div key={index}>
+                      <Link
+                        className="hover:scale-[1.05] duration-200 "
+                        href={item.path}
+                        target="_blank"
+                      >
+                        {item.icon}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+                {footerlinkData.map((item, index) => (
                   <div key={index}>
-                    <Link
-                      className="hover:scale-[1.05] duration-200 "
-                      href={item.path}
-                      target="_blank"
-                    >
-                      {item.icon}
-                    </Link>
+                    <H5heading h5heading={item.title} />{" "}
+                    {item.sublinks.map((items, i) => (
+                      <div key={i}>
+                        <Para para={items.point} />
+                      </div>
+                    ))}
                   </div>
                 ))}
               </div>
             </div>
-            <div className="flex max-sm:flex-wrap gap-y-[30px] max-sm:gap-x-[150px] max-md:gap-x-[100px] gap-x-[55px]">
+            {/* <div className="flex max-sm:flex-wrap gap-y-[30px] max-sm:gap-x-[150px] max-md:gap-x-[100px] gap-x-[55px]">
               <div className="flex flex-col gap-[10px] md:gap-[30px]">
                 <p className="Roboto-font text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl">
                   Services
@@ -99,7 +119,7 @@ function Footer() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
