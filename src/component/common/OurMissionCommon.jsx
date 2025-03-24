@@ -16,7 +16,7 @@ function OurMissionCommon({ abimg, title, para, bookbtn, h4Class }) {
             {" "}
             {title}
           </h4>
-          <p className="text-sm md:text-base lg:text-xl text-[#D7D9DD] max-w-[867px] font-light mt-3">
+          <p className="text-sm md:text-base lg:text-xl text-[#D7D9DD] max-w-[568px] font-light mt-3">
             {para}
           </p>
           <Booklink booklink={bookbtn} />

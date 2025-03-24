@@ -1,125 +1,49 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import Booklink from "./Booklink";
-import {
-  FacebookIcon,
-  FooterFacebook,
-  FooterInsta,
-  Footerlinkedin,
-  InstaIcon,
-} from "../helper/Icon";
-import {
-  footerdata,
-  footerIcon,
-  footerlink,
-  footerlinkData,
-} from "../helper/Helper";
-import H5heading from "./H5heading";
-import Para from "./Para";
 import Para2 from "./Para2";
+import { footerData, footerIcon } from "../helper/Helper";
+import H5heading from "./H5heading";
 
 function Footer() {
   return (
     <>
-      <div className="bg-[#494336]  border-t-[2px] w-[100%] border-solid border-[#D8DADC]">
-        <div className="max-w-[1364px] px-8 max-sm:pb-[111px] py-[60px] mx-auto">
-          <div className="flex justify-between gap-10 max-[950px]:flex-wrap">
-            <div className="max-w-[309px]">
-              <label
-                className="text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl mb-6 roboto-mono"
-                htmlFor="email"
-              >
-                Stay in touch:
-              </label>
+      <div className="bg-[#494336] pt-[60px] pb-[110px] lg:pb-[60px] border-t-[2px] border-[#D7D9DD]  ">
+        <div className="max-w-[1440px] ps-[32px] sm:ps-[40px] lg:ps-[60px] xl:ps[70px] pe-[32px] sm:pe-[80px] lg:pe-[120px] xl:pe-[180px] mx-auto">
+          <div className="flex flex-wrap xl:flex-nowrap items-center   gap-[60px]">
+            <div className="w-[50%]">
+              <Para2
+                paraClass={
+                  "!text-base md:!text-xl lg:!text-2xl !text-[#D7D9DD] !mt-0"
+                }
+                para2={"Stay in touch:"}
+              />
               <input
-                className="text-lg text-[#D7D9DD] py-[6px] px-[14px] border-[1px] border-solid border-[#D7D9DD] bg-[#494336] mt-6 w-full"
-                type="email"
-                name="email"
-                id="email"
+                className="border border-[#D9D9D9] text-[#D7D9DD] px-2 py-1 max-w-[360px] w-full mt-[24px]"
+                type="text"
                 placeholder="Email"
               />
-              <div className="flex gap-10">
-                <div className="flex gap-5 mt-[15px] md:mt-[22px]">
-                  {footerIcon.map((item, index) => (
-                    <div key={index}>
-                      <Link
-                        className="hover:scale-[1.05] duration-200 "
-                        href={item.path}
-                        target="_blank"
-                      >
-                        {item.icon}
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-                {footerlinkData.map((item, index) => (
-                  <div key={index}>
-                    <H5heading h5heading={item.title} />{" "}
-                    {item.sublinks.map((items, i) => (
-                      <div key={i}>
-                        <Para para={items.point} />
-                      </div>
-                    ))}
-                  </div>
+              <div className="flex mt-[24px]  gap-4">
+                {footerIcon.map((item, index) => (
+                  <div key={index}>{item.icon}</div>
                 ))}
               </div>
             </div>
-            {/* <div className="flex max-sm:flex-wrap gap-y-[30px] max-sm:gap-x-[150px] max-md:gap-x-[100px] gap-x-[55px]">
-              <div className="flex flex-col gap-[10px] md:gap-[30px]">
-                <p className="Roboto-font text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl">
-                  Services
-                </p>
-                <div className="flex flex-col gap-[7px]">
-                  {footerlink.map((item, index) => (
-                    <div key={index}>
-                      <Link
-                        className="text-[#D7D9DD] text-sm sm:text-base underline hover:text-transparent bg-clip-text  bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300"
-                        href={item.path}
-                      >
-                        {item.title}
-                      </Link>
+            <div className="flex flex-wrap gap-[30px] justify-between w-[100%] xl:max-w-[550px]">
+              {footerData.map((item, index) => (
+                <div key={index}>
+                  <H5heading h5heading={item.title} />
+                  {item.sublinks.map((items, i) => (
+                    <div key={i}>
+                      <Para2
+                        paraClass={
+                          "!text-sm md:!text-base lg:text-lg !text-[#D7D9DD] !mt-[6px] underline"
+                        }
+                        para2={items.point}
+                      />
                     </div>
                   ))}
                 </div>
-              </div>
-              <div className="flex flex-col gap-[10px] md:gap-[30px]">
-                <p className="Roboto-font text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl">
-                  Company
-                </p>
-                <div className="flex flex-col gap-[7px]">
-                  {footerdata.map((item, index) => (
-                    <div key={index}>
-                      <Link
-                        className="text-[#D7D9DD] text-sm sm:text-base underline hover:text-transparent bg-clip-text bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300"
-                        href={item.path}
-                      >
-                        {item.title}
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="flex flex-col gap-[10px] md:gap-[30px] xl:ml-[57px] xl:mr-[145px]">
-                <p className="Roboto-font text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl">
-                  Contact Us
-                </p>
-                <div className="flex flex-col gap-[7px]">
-                  <Link
-                    className="text-[#D7D9DD] text-sm sm:text-base underline hover:text-transparent bg-clip-text bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300"
-                    href={"tel:+91 2121234567"}
-                  >
-                    Phone: (212) 123-4567
-                  </Link>
-                  <Link
-                    className="text-[#D7D9DD] text-sm sm:text-base underline hover:text-transparent bg-clip-text bg-gradient-to-r from-[#FFA280] to-[#8FD9CB] duration-300"
-                    href={"mailto:hello@gmail.com"}
-                  >
-                    hello@nebulavets.com
-                  </Link>
-                </div>
-              </div>
-            </div> */}
+              ))}
+            </div>
           </div>
         </div>
       </div>

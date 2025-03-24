@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function Para({para}) {
+function Para({ para, pClass }) {
   return (
-         <p className='text-base md:text-xl lg:text-[28px] text-[#D7D9DD] roboto mt-[15px] lg:mt-[25px]'>{para}</p>
-   )
+    <p
+      className={`text-base md:text-xl lg:text-[28px] text-[#D7D9DD] roboto mt-[15px] lg:mt-[25px] ${pClass}`}
+    >
+      {para}
+    </p>
+  );
 }
 
-export default Para
+export default Para;

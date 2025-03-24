@@ -5,6 +5,10 @@ import {
   LinkedinIcon,
   DogIcon,
   CatIcon,
+  Injection,
+  EarthIcon,
+  SurgeryIcon,
+  CatDogIcon,
 } from "./Icon";
 
 export const navLink = [
@@ -18,7 +22,7 @@ export const navLink = [
   },
   {
     link: "LOCATION",
-    path: "/services",
+    path: "/location",
   },
   {
     link: "CAREER",
@@ -33,6 +37,7 @@ export const footerIcon = [
   {
     icon: <FacebookIcon />,
     path: "/",
+    className: "bg-red-700",
   },
   { icon: <LinkedinIcon />, path: "/" },
   { icon: <InstaIcon />, path: "/" },
@@ -638,24 +643,103 @@ export const careerData = [
     para: "",
   },
 ];
-export const footerlinkData = [
-  {
-    title: "service",
-    sublinks: [{ point: "dental" }, { point: "asd" }, { point: "asd" }],
-  },
-  {
-    title: "service",
-    sublinks: [{ point: "asd" }, { point: "asd" }, { point: "asd" }],
-  },
-  {
-    title: "service",
-    sublinks: [{ point: "asd" }, { point: "asd" }, { point: "asd" }],
-  },
-  ,
-];
+
 export const footerData = [
   {
-    title: "service",
-    sublinks: [{ point: "" }],
+    title: "Service",
+    sublinks: [
+      { point: "Preventive Care" },
+      { point: "Sick Patient Care" },
+      { point: "Surgery" },
+      { point: "Additional Services" },
+    ],
+  },
+  {
+    title: "Company",
+    sublinks: [{ point: "About us" }, { point: "Carreers" }],
+  },
+  {
+    title: "Contact Us",
+    sublinks: [
+      { point: "Phone: (212) 123-4567" },
+      { point: "hello@nebulavets.com" },
+    ],
+  },
+];
+export const homeSliderData = [
+  {
+    img: <Injection />,
+    title: "Preventive Care",
+    sublinks: [
+      { point: "Animal Health Check" },
+      { point: " Vaccinations" },
+      { point: "Dental" },
+    ],
+  },
+  {
+    img: <EarthIcon />,
+    title: "Sick Patient Care",
+    sublinks: [
+      { point: "Urgent &  Emergency Care" },
+      { point: " Telemedicine" },
+      { point: "Diagnostics" },
+      { point: "Pharmacy" },
+    ],
+  },
+  {
+    img: <SurgeryIcon />,
+    title: "Surgery",
+    sublinks: [{ point: "Surgeries" }, { point: "Spay & Neuter" }],
+  },
+  {
+    img: <CatDogIcon />,
+    title: "Additional  Services",
+    sublinks: [
+      { point: "Travel Certificates" },
+      { point: " Skin & Dermatology" },
+      { point: "Euthanasia" },
+    ],
+  },
+];
+export const homeaccordianData = [
+  {
+    title: "Cutting-Edge Technology",
+  },
+  {
+    title: "Independant",
+  },
+  {
+    title: "Progressive Medicine",
+  },
+  {
+    title: "Environmentally conscious​",
+  },
+  {
+    title: "Expert Team",
+  },
+  {
+    title: "Education",
+  },
+];
+
+export const aboutnebulaData = [
+  {
+    img: "/assetes/img/png/cat-dog.png",
+    title: "   About Nebula Vets ?",
+    para: "Founded on a strong set of core values, the story of Nebula Vets began with Daniel Hodnett-Lewis, a visionary veterinary surgeon from England, UK. Fueled by a deep passion for animals and a desire to elevate the standard of care, Daniel embarked on a mission to create a veterinary practice that would revolutionize the way pets are treated and cared for. Here's the story of Nebula Vets:",
+    bookbtn: "BOOK NOW",
+  },
+];
+export const ourapporachData = [
+  {
+    title: "Our Approach",
+    para: "At our independent veterinary hospital, we combine compassion, advanced expertise, and a commitment to exceptional care. From routine check-ups to urgent and emergency situations, we are here to provide your beloved pets with the highest level of service and support they deserve.",
+  },
+];
+export const ourservicesData = [
+  {
+    title: "Our Services",
+    para: "We are proud to offer a comprehensive range of exceptional clinical services to cater to all your pet's needs. From routine wellness health checks to prompt and efficient urgent care, our team is here to provide the highest level of support and assistance. Count on us to be there for you and your beloved companion every step of the way.",
+    learnbtn: "LEARN MORE",
   },
 ];
