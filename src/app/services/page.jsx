@@ -1,5 +1,3 @@
-import Footer from "@/component/common/Footer";
-import Navbar from "@/component/common/Navbar";
 import Care from "@/component/pages/services/Care";
 import Hero from "@/component/pages/services/Hero";
 import Preventivecare from "@/component/pages/services/Preventivecare";
@@ -16,8 +14,9 @@ function page() {
       <Slider />
       <Care />
       <Preventivecare />
-      <Surgery />
       <Sick />
+      <Surgery />
+      <Travel />
     </>
   );
 }

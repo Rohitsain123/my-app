@@ -7,16 +7,18 @@ function Hero() {
   return (
     <>
       <div className="bg-[#494336] pt-[130px] lg:pt-[250px] pb-[260px] lg:pb-[85px] relative">
-        <div className="absolute bottom-0 end-0 w-full max-w-[653px]">
-          <Image
-            className="w-full"
-            src={"/assetes/img/png/dog-cat-hero.png"}
-            width={653}
-            height={426}
-            alt={"hero"}
-          />
+        <div className="absolute bottom-0 right-0 w-full max-w-[653px]  ">
+          <div className="max-w-[362px] lg:max-w-[650px]">
+            <Image
+              className="w-full"
+              src={"/assetes/img/png/dog-cat-hero.png"}
+              width={653}
+              height={426}
+              alt={"hero"}
+            />
+          </div>
         </div>
-        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px]">
+        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto ">
           <div className="max-w-[660px]">
             <h1 className="text-[32px] md:text-5xl lg:text-[70px] text-[#D7D9DD]">
               Veterinary Services
