@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 @import "tailwindcss";
 
 @theme {
@@ -27,4 +29,14 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@font-face {
+  font-family: "avnatt";
+  src: url("/public/assetes/avantt-font-family-1739582482-0/AvanttTRIALVF-BF6721a86b223dc.ttf");
+}
+.avnatt {
+  font-family: "avantt";
+}
+.roboto {
+  font-family: "roboto";
 }

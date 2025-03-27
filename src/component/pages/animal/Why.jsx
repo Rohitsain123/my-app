@@ -1,48 +1,42 @@
-import Image from 'next/image'
-import React from 'react'
+import H5heading from "@/component/common/H5heading";
+import { accordianData, animalhealthData } from "@/component/helper/Helper";
+import { PlusIcon } from "@/component/helper/Icon";
+import React from "react";
 
 function Why() {
   return (
-    <> 
-    <div className='bg-[#fff] py-[60px] lg:py-[80px]'>
-        <div className='max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto'>
-            <div>
-                <h5 className='text-2xl md:text-3xl lg:text-4xl text-[#494336]'>Why Animal Health Checks Matter:</h5>
-                <div className='flex justify-between mt-[45px] pb-[32px]'>
-                    <h5 className='text-base md:text-lg lg:text-2xl text-[#494336]'>Early Detection and Prevention</h5>
-                    <Image src={"/assetes/img/png/plus.png"} width={30} height={30} alt="plus" />
+    <>
+      <div className="bg-[#fff] py-[60px] lg:py-[80px]">
+        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto">
+          <H5heading
+            h5Class={"!text-[#494336] !text-2xl md:!text-3xl lg:!text-[4xl]"}
+            h5heading={"Why Animal Health Checks Matter:"}
+          />
+          {animalhealthData.map((item, index) => (
+            <div key={index}>
+              <div className="accordion">
+                <div className="accordion-item mt-[32px]">
+                  <div
+                    className="flex justify-between items-center  pb-[30px] cursor-pointer "
+                    id="accordion-header-1"
+                  >
+                    <h2 className="text-base sm:text-lg lg:text-2xl font-regular roboto text-[#494336]">
+                      {item.title}
+                    </h2>
+                    <PlusIcon />
+                  </div>
+                  <div className="accordion-body hidden pb-[30px] text-gray-700 ">
+                    <p className="text-lg text-[#494336]">{item.para}</p>
+                  </div>
                 </div>
-                <div className="w-full h-1 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div>
-                <div className='flex justify-between mt-[45px] pb-[32px]'>
-                    <h5 className='text-base md:text-lg lg:text-2xl text-[#494336]'>Tailored Care for Different Life Stages</h5>
-                    <Image src={"/assetes/img/png/plus.png"} width={30} height={30} alt="plus" />
-                </div>
-                <div className="w-full h-1 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div> 
-                <div className='flex justify-between mt-[45px] pb-[32px]'>
-                    <h5 className='text-base md:text-lg lg:text-2xl text-[#494336]'>Comprehensive Physical Examinations</h5>
-                    <Image src={"/assetes/img/png/plus.png"} width={30} height={30} alt="plus" />
-                </div>
-                <div className="w-full h-1 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div> 
-                <div className='flex justify-between mt-[45px] pb-[32px]'>
-                    <h5 className='text-base md:text-lg lg:text-2xl text-[#494336]'>Vaccinations and Preventive Care</h5>
-                    <Image src={"/assetes/img/png/plus.png"} width={30} height={30} alt="plus" />
-                </div>
-                <div className="w-full h-1 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div> 
-                <div className='flex justify-between mt-[45px] pb-[32px]'>
-                    <h5 className='text-base md:text-lg lg:text-2xl text-[#494336]'>Diagnostic Screenings</h5>
-                    <Image src={"/assetes/img/png/plus.png"} width={30} height={30} alt="plus" />
-                </div>
-                <div className="w-full h-1 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div>
-                <div className='flex justify-between mt-[45px] pb-[32px]'>
-                    <h5 className='text-base md:text-lg lg:text-2xl text-[#494336]'>Client Education and Support</h5>
-                    <Image src={"/assetes/img/png/plus.png"} width={30} height={30} alt="plus" />
-                </div>
-                <div className="w-full h-1 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div>
+              </div>
+              <div className="w-full h-[3px] bg-[linear-gradient(90deg,#FFA280_0%,#8FD9CB_100%)]"></div>
             </div>
+          ))}
         </div>
-    </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default Why
+export default Why;

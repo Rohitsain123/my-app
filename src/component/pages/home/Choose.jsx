@@ -19,7 +19,7 @@ function Choose() {
                   <H5heading h5heading={item.title} />
                   <PlusIcon />
                 </div>
-                <div className="w-full h-0.5 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div>
+                <div className="w-full h-1 bg-linear-65 from-[#FFA280] to-[#8FD9D9]"></div>
               </div>
             ))}
           </div>

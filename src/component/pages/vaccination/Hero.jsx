@@ -5,6 +5,7 @@ function Hero() {
   return (
     <>
       <HeroCommon
+        imgClass={"max-w-[500px]"}
         heroimg={"/assetes/img/png/vaccination-hero.png"}
         title={"Vaccinations"}
         para={

@@ -228,26 +228,6 @@ export const cardData = [
   },
 ];
 
-export const testdata = [
-  {
-    para: "Hematology",
-  },
-  {
-    para: "Serum Chemistries",
-  },
-  {
-    para: "Urinalysis",
-  },
-  {
-    para: "Cytology",
-  },
-  {
-    para: "Fecal analysis",
-  },
-  {
-    para: "Blood disorders",
-  },
-];
 export const bloodData = [
   {
     title: "Blood Panel",
@@ -282,30 +262,7 @@ export const digitaldata = [
     title: "Echocardiograms",
   },
 ];
-export const snapData = [
-  {
-    title: "SNAP Lepto Test",
-    title2: "SNAP Lepto Test",
-    title3: "SNAP Lepto Test",
-    title4: "SNAP Lepto Test",
-    para: "Add description",
-    para2: "Assess canine pancreatic health",
-    para3: "Add description",
-    para4: "Add description",
-    img: "/assetes/img/png/dog.png",
-  },
-  {
-    title: "SNAP Lepto Test",
-    title2: "SNAP Lepto Test",
-    title3: "SNAP Lepto Test",
-    title4: "SNAP Lepto Test",
-    para: "Add description",
-    para2: "Assess feline pancreatic health",
-    para3: "Add description",
-    para4: " Quickly assess cats with cardiac risk factors",
-    img: "/assetes/img/png/cat2.png",
-  },
-];
+
 export const workData = [
   {
     title: "How it works",
@@ -864,6 +821,267 @@ export const additinoalservicesData = [
         title: "Hospice & Euthanasia",
         para: "The decision to say goodbye to your pet is the most difficult decision you’ll have to make. Our team at nebula vets is here to guide you through the process with compassion and can perform end-of-life services at the time of your choosing.",
         learnbtn: "LEARN MORE",
+      },
+    ],
+  },
+];
+export const examData = [
+  {
+    para: "In addition to providing routine health checks, we offer a comprehensive range of services to ensure the well-being of your pets:",
+    subpara: [
+      { para: "-Vaccinations" },
+      { para: "-Blood panels" },
+      { para: "-Parasitic prevention" },
+      { para: "-Microchipping" },
+      { para: "-Dental care" },
+      { para: "-Fecal tests" },
+      { para: "-Skin tests" },
+      { para: "-Dietary advise" },
+    ],
+  },
+];
+export const animalhealthData = [
+  {
+    title: "Early Detection and Prevention",
+    para: "",
+  },
+  {
+    title: "Tailored Care for Different Life Stages",
+    para: "",
+  },
+  {
+    title: "Comprehensive Physical Examinations",
+    para: "",
+  },
+  {
+    title: "Vaccinations and Preventive Care",
+    para: "",
+  },
+  {
+    title: "Diagnostic Screenings",
+    para: "",
+  },
+  {
+    title: "Nutritional and Behavioral Guidance",
+    para: "",
+  },
+  {
+    title: "Client Education and Support",
+    para: "",
+  },
+];
+export const animalheathcheckData = [
+  {
+    title: "Experience Exceptional Animal Health Checks at Nebula Vets:",
+    para: "At Nebula Vets, we are committed to providing exceptional animal health checks that go beyond the basics. Our thorough evaluations, personalized care, and commitment to preventive medicine set us apart. Trust us to be your partner in ensuring your pet's well-being and delivering the highest standard of veterinary care.",
+  },
+];
+export const mypetData = [
+  {
+    title: "Why should I vaccinate my pet?",
+    para: "Vaccines are affective as the expose your pet’s immune system to an inactive strain of infectious agents. This assists their body to create immune cells that are specifically designed to respond effectively when exposed to the disease. Vaccines are also relatively painless, quick and cost-effective to administer.",
+    subdata: [
+      { title: "What are core and non-core vaccines?" },
+      {
+        para: "Core vaccines are often vaccines considered essential for your pet’s health, whilst non-core vaccines are optional, and may be recommended for your pet depending on their lifestyle.",
+      },
+      {
+        para2:
+          "Our vets will discuss the suitable vaccines for your pet during the consultation.",
+      },
+    ],
+  },
+];
+export const puppiesData = [
+  {
+    icon: <DogIcon />,
+    title: "Puppies Schedule",
+    subdata: [
+      {
+        title: "8 weeks: ",
+        para: "Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme vaccine & Canine Influenza Virus vaccine",
+      },
+      {
+        title: "12 weeks: ",
+        para: "Distemper vaccine, Leptospirosis vaccine, Rabies vaccine, Lyme vaccine & Canine Influenza Virus vaccine",
+      },
+      { title: "Booster: ", para: "Once a year" },
+    ],
+  },
+  {
+    icon: <CatIcon />,
+    title: "Kitten Schedule",
+    subdata: [
+      { title: "8 weeks: ", para: "FVRCP vaccine and Leukemia vaccines" },
+      {
+        title: "12 weeks:",
+        para: "FVRCP vaccine, Leukemia vaccine& Rabies vaccine",
+      },
+    ],
+  },
+];
+
+export const adultdogData = [
+  {
+    icon: <DogIcon />,
+    title: "Adult Dog Schedule",
+    subdata: [
+      {
+        para: "Rabies: One year after the initial puppy vaccine, then every three years",
+      },
+      {
+        para: "Distemper: Every three years",
+      },
+      {
+        para: "Bordetella: Every year",
+      },
+      {
+        para: "Leptospirosis: Every year",
+      },
+      {
+        para: "Canine influenza: Every year",
+      },
+      {
+        para: "Lyme disease: Every year",
+      },
+    ],
+  },
+  {
+    icon: <CatIcon />,
+    title: "Adult Dog Schedule",
+    subdata: [
+      {
+        para: "FVRCP: Every year",
+      },
+      {
+        para: "Rabies: Every three years",
+      },
+      {
+        para: "Feline Leukemia Virus: Every year",
+      },
+    ],
+  },
+];
+export const scaleData = [
+  {
+    title: "Dentals - Scale & Polish",
+    para: "Dental health is a vital aspect of your pet's overall well-being. Just like humans, pets can experience dental problems, including plaque buildup, gum disease, and tooth decay. At Nebula Vets, we prioritize dental care and offer comprehensive dental services to ensure your pet's oral health remains in top condition.",
+  },
+  {
+    title: "When to schedule a dental consultation",
+    para: "If you notice any signs of dental problems in your pet, such as bad breath, red or swollen gums, difficulty eating, or loose teeth, it's essential to seek professional dental care. Schedule a dental consultation at Nebula Vets to have our skilled team assess your pet's dental health and recommend the most appropriate treatment options.",
+  },
+  {
+    title: "Post Dental Care",
+    para: "Most pets recover quickly after a dental. A little tiredness, and some post-anesthesia anxiety is normal. You can feed your pet the evening of their procedure; soft food for 14 days is recommended if any dental extractions were performed. If your pet had any extractions performed, we will send them home with pain relief to keep them comfortable.",
+  },
+];
+export const urgentcareData = [
+  {
+    title: "Urgent & Emergency Care during open hours",
+    para: "At Nebula Vets, we understand that emergencies can happen at any time, and your pet's health and well-being are our top priority.  We have convenient operating hours to ensure that we are available when you need us.",
+    para2:
+      "If you have an urgent situation and require immediate advice or first aid instructions while you're on your way to our practice, you can contact us at 1234567. Our knowledgeable staff will assist you and provide guidance to help you manage the situation until you arrive.",
+    title2: "Outside open hours",
+    para3: "The closest 24hr emergency veterinary hospital to our practice is:",
+    para4: "Their number is 123456",
+    title3: "Reasons to seek Urgent or Emergency care",
+    subdata: [
+      { para: "Open wounds" },
+      { para: "Toxin ingestion or foreign body" },
+      { para: "Signs of pain" },
+      { para: "Behavioral changes" },
+      { para: "Eye issues" },
+      { para: "Ear infections" },
+      { para: "Vomiting or diarrhea" },
+      { para: "Coughing, sneezing or nasal discharge" },
+      { para: "Urinating blood or urinary changes" },
+      { para: "Worms, fleas, ticks or mites" },
+      { para: "Scooting" },
+      { para: "Changes in eating or drinking" },
+    ],
+  },
+];
+export const whyusetelemedicine = [
+  {
+    title: "Why use Telemedicine",
+    para: "Nebula Vets' online telemedicine service is designed to provide immediate advice and guidance for various veterinary issues. Whether you're unsure about the severity of a symptom or need assistance in determining the best course of action for your pet, our experienced veterinarians can offer real-time advice through the telemedicine platform.",
+    subdata: [
+      { title: "During the online consultation" },
+      {
+        para: "Our veterinarians will carefully assess the information you provide and ask relevant questions to better understand your pet's condition. Based on their evaluation, they can advise you on whether it's safe to monitor the situation at home or if furtherin-person evaluation and treatment are necessary.",
+      },
+      {
+        para: "This immediate access to professional veterinary advice can be particularly valuable in situations where you're unsure if a symptom or behavior is concerning enough to warrant a visit to the clinic. It can save you time and unnecessary stress by providing clarity and peace  of mind.",
+      },
+      {
+        para: "However, it's important to note that there are limitations to telemedicine, and certain cases may still require an in-person visit for a thorough examination or diagnostic tests. Our veterinarians will use their expertise to determine the most appropriate course of action based on the information provided during the telemedicine consultation.",
+      },
+    ],
+  },
+];
+export const availabletestData = [
+  {
+    title: "Available Tests",
+    para: "At Nebula Vets, we take pride in offering an in-house laboratory equipped with state-of-the-art diagnostic equipment to fulfill your pet's diagnostic needs. Our comprehensive laboratory services include:",
+    subdata: [
+      {
+        para: "Hematology",
+      },
+      {
+        para: "Serum Chemistries",
+      },
+      {
+        para: "Urinalysis",
+      },
+      {
+        para: "Cytology",
+      },
+      {
+        para: "Fecal analysis",
+      },
+      {
+        para: "Blood disorders",
+      },
+    ],
+  },
+];
+export const snapData = [
+  {
+    img: "/assetes/img/png/dog.png",
+    title: "SNAP Lepto Test",
+    para: "Add description",
+    subdata: [
+      {
+        title: "SNAP cPL Test",
+        para: "Assess canine pancreatic health",
+      },
+      {
+        title: "SNAP Giardia Test",
+        para: "Add description",
+      },
+      {
+        title: "SNAP Parvo Test",
+        para: "Add description",
+      },
+    ],
+  },
+  {
+    img: "/assetes/img/png/cat2.png",
+    title: "SNAP FIV/FeLV Combo Test",
+    para: "Add description",
+    subdata: [
+      {
+        title: "SNAP fPL Test",
+        para: "Assess canine pancreatic health",
+      },
+      {
+        title: "SNAP Giardia Test",
+        para: "Add description",
+      },
+      {
+        title: "SNAP Feline proBNP Test ",
+        para: "Add description",
       },
     ],
   },

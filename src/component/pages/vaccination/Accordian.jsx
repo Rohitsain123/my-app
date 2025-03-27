@@ -5,7 +5,7 @@ import React from "react";
 function Accordian() {
   return (
     <>
-      <div className="bg-[#fff] py-[60px] lg:py-[80px]">
+      <div className="bg-[#fff] pt-[30px] pb-[60px] lg:pb-[80px]">
         <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto">
           {accordianData.map((item, index) => (
             <div key={index}>

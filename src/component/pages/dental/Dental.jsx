@@ -1,3 +1,5 @@
+import H5heading from "@/component/common/H5heading";
+import Para2 from "@/component/common/Para2";
 import { dentaldata } from "@/component/helper/Helper";
 import { PlusIcon } from "@/component/helper/Icon";
 import React from "react";
@@ -6,10 +8,11 @@ function Dental() {
   return (
     <>
       <div className="bg-[#fff] py-[60px] lg:py-[80px]">
-        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px]">
-          <h5 className="text-2xl md:text-3xl lg:text-4xl text-[#494336] ">
-            Why Choose Nebula Vets for Dental Care:
-          </h5>
+        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto">
+          <H5heading
+            h5Class={"!text-[#494336] text-2xl md:text-3xl lg:text-4xl"}
+            h5heading={"Why Choose Nebula Vets for Dental Care:"}
+          />
           {dentaldata.map((item, index) => (
             <div key={index}>
               <div className="accordion">
@@ -18,13 +21,19 @@ function Dental() {
                     className="flex justify-between items-center  pb-[30px] cursor-pointer "
                     id="accordion-header-1"
                   >
-                    <h2 className="text-base sm:text-lg lg:text-2xl font-regular roboto text-[#494336]">
-                      {item.title}
-                    </h2>
+                    <H5heading
+                      h5Class={
+                        "!text-base md:!text-lg lg:!text-2xl roboto !text-[#494336]"
+                      }
+                      h5heading={item.title}
+                    />
                     <PlusIcon />
                   </div>
                   <div className="accordion-body hidden pb-[30px] text-gray-700 ">
-                    <p className="text-lg text-[#494336]">{item.para}</p>
+                    <Para2
+                      paraClass={"!text-[#494336] text-2xl"}
+                      para2={item.para}
+                    />
                   </div>
                 </div>
               </div>

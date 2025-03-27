@@ -1,3 +1,11 @@
+import H5heading from "@/component/common/H5heading";
+import Para from "@/component/common/Para";
+import Para2 from "@/component/common/Para2";
+import {
+  adultdogData,
+  kittenData,
+  puppiesData,
+} from "@/component/helper/Helper";
 import { CatIcon, DogIcon } from "@/component/helper/Icon";
 import Image from "next/image";
 import React from "react";
@@ -7,116 +15,65 @@ function Vaccinate() {
     <>
       <div className="bg-[#fff] pb-[60px] lg:pb-[80px]">
         <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto">
-          <h5 className="texx-2xl md:text-3xl lg:text-5xl text-[#494336]">
-            When to vaccinate?
-          </h5>
+          <H5heading
+            h5Class={"!text-[#494336] !text-2xl md:!text-4xl lg:!text-5xl"}
+            h5heading={"When to vaccinate?"}
+          />
           <div className="flex gap-[20px] mt-[40px]">
-            <div className="bg-[#494336] pt-[29px] lg:pt-[34px] pe-[17px] lg:pe-[21px] pb-[70px] lg:pb-[57px] ps-[24px] lg:ps-[48px] max-w-[550px] w-full h-">
-              <div className="flex gap-[12px] min-w-[60px] w-full">
-                <DogIcon />
-                <h4 className="text-2xl sm:text-3xl lg:text-5xl text-grad">
-                  Puppies Schedule
-                </h4>
-              </div>
-              <div className="mt-[26px]">
-                <div className=" w-full">
-                  <h6 className="text-2xl text-[#D7D9DD]">8 weeks: </h6>
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
-                    vaccine & Canine Influenza Virus vaccine
-                  </p>{" "}
-                  <h6 className="text-2xl text-[#D7D9DD] mt-[10px]">
-                    12 weeks:{" "}
-                  </h6>
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
-                    vaccine & Canine Influenza Virus vaccine
-                  </p>{" "}
-                  <h6 className="text-2xl text-[#D7D9DD] mt-[10px]">
-                    Booster:{" "}
-                  </h6>
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    Once a year
-                  </p>
+            {puppiesData.map((item, index) => (
+              <div className="bg-[#494336] pt-[29px] lg:pt-[34px] pe-[17px] lg:pe-[21px] pb-[70px] lg:pb-[57px] ps-[24px] lg:ps-[48px] max-w-[550px] w-full h-">
+                <div key={index}>
+                  <div className="flex gap-[10px]">
+                    {item.icon}
+                    <H5heading
+                      h5Class={"!text-2xl md:!text-4xl lg:!text-5xl text-grad"}
+                      h5heading={item.title}
+                    />
+                  </div>
+                  {item.subdata.map((items, i) => (
+                    <div key={i} className={`${i === 0 ? "mt-7" : ""}`}>
+                      <Para2
+                        paraClass={
+                          "!text-[#D7D9DD] !text-base md:!text-lg lg:!text-2xl !mt-0"
+                        }
+                        para2={items.title}
+                      />
+                      <Para
+                        pClass={
+                          "!text-sm md:!text-base lg:!text-xl avantt !mt-0"
+                        }
+                        para={items.para}
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
-            </div>
-            <div className="bg-[#494336] pt-[29px] lg:pt-[34px] pe-[17px] lg:pe-[21px] pb-[70px] lg:pb-[57px] ps-[24px] lg:ps-[48px] max-w-[550px] w-full h-">
-              <div className="flex gap-[12px] min-w-[60px]">
-                <CatIcon />
-                <h4 className="text-2xl sm:text-3xl lg:text-5xl text-grad">
-                  Kitten Schedule
-                </h4>
-              </div>
-              <div className="mt-[26px]">
-                <div className=" w-full">
-                  <h6 className="text-2xl text-[#D7D9DD]">8 weeks: </h6>
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    FVRCP vaccine and Leukemia vaccines
-                  </p>{" "}
-                  <h6 className="text-2xl text-[#D7D9DD] mt-[10px]">
-                    12 weeks:{" "}
-                  </h6>
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    FVRCP vaccine, Leukemia vaccine& Rabies vaccine
-                  </p>{" "}
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
           <div className="flex gap-[20px] mt-[40px]">
-            <div className="bg-[#494336] pt-[29px] lg:pt-[34px] pe-[17px] lg:pe-[21px] pb-[70px] lg:pb-[57px] ps-[24px] lg:ps-[48px] max-w-[550px] w-full h-">
-              <div className="flex gap-[12px] min-w-[60px] w-full">
-                <DogIcon />
-                <h4 className="text-2xl sm:text-3xl lg:text-5xl text-grad">
-                  Adult Dog Schedule
-                </h4>
-              </div>
-              <div className="mt-[26px]">
-                <div className=" w-full">
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    Rabies: One year after the initial puppy vaccine, then every
-                    three years
-                  </p>{" "}
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    Distemper: Every three years
-                  </p>{" "}
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    Bordetella: Every year
-                  </p>{" "}
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    Leptospirosis: Every year
-                  </p>{" "}
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    Canine influenza: Every year
-                  </p>
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    Lyme disease: Every year
-                  </p>
+            {adultdogData.map((item, index) => (
+              <div className="bg-[#494336] pt-[29px] lg:pt-[34px] pe-[17px] lg:pe-[21px] pb-[70px] lg:pb-[57px] ps-[24px] lg:ps-[48px] max-w-[550px] w-full h-">
+                <div key={index}>
+                  <div className="flex gap-[20px]">
+                    {item.icon}
+                    <H5heading
+                      h5Class={"!text-2xl md:!text-4xl lg:!text-5xl text-grad"}
+                      h5heading={item.title}
+                    />
+                  </div>
+                  {item.subdata.map((items, i) => (
+                    <div key={i} className={`${i === 0 ? "mt-7" : ""}`}>
+                      <Para2
+                        paraClass={
+                          "!text-sm md:!text-base lg:!text-xl !text-[#D7D9DD] !mt-0"
+                        }
+                        para2={items.para}
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
-            </div>
-            <div className="bg-[#494336] pt-[29px] lg:pt-[34px] pe-[17px] lg:pe-[21px] pb-[70px] lg:pb-[57px] ps-[24px] lg:ps-[48px] max-w-[550px] w-full h-">
-              <div className="flex gap-[12px] min-w-[60px]">
-                <CatIcon />
-                <h4 className="text-2xl sm:text-3xl lg:text-5xl text-grad">
-                  Adult Cat Schedule
-                </h4>
-              </div>
-              <div className="mt-[26px]">
-                <div className=" w-full">
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    FVRCP: Every year
-                  </p>
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    Rabies: Every three years
-                  </p>{" "}
-                  <p className="text-xl text-[#D7D9DD] max-w-[408px]">
-                    Feline Leukemia Virus: Every year{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

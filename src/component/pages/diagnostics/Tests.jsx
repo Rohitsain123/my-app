@@ -1,6 +1,7 @@
 import H5heading from "@/component/common/H5heading";
 import Para2 from "@/component/common/Para2";
-import { testdata } from "@/component/helper/Helper";
+import { availabletestData } from "@/component/helper/Helper";
+
 import Image from "next/image";
 
 import React from "react";
@@ -19,23 +20,32 @@ function Tests() {
           />
         </div>
         <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px]">
-          <H5heading
-            h5Class={"!text-[#494336] text-2xl md:text-4xl lg:text-5xl"}
-            h5heading={"Available Tests"}
-          />
-          <Para2
-            paraClass={"!text-sm md:!text-base lg:!text-lg"}
-            para2={
-              "At Nebula Vets, we take pride in offering an in-house laboratory equipped with state-of-the-art diagnostic equipment to fulfill your pet's diagnostic needs. Our comprehensive laboratory services include:"
-            }
-          />
-          <ul className={"list-disc ms-[24px]"}>
-            {testdata.map((item, index) => (
-              <div key={index}>
-                <li>{item.para}</li>
-              </div>
-            ))}
-          </ul>
+          {availabletestData.map((item, index) => (
+            <div key={index}>
+              <H5heading
+                h5Class={"!text-[#494336] text-2xl md:text-3xl lg:text-4xl"}
+                h5heading={item.title}
+              />
+              <Para2
+                paraClass={"!text-[#494336] !text-sm md:!text-base lg:!text-lg"}
+                para2={item.para}
+              />
+              {item.subdata.map((items, i) => (
+                <div key={i}>
+                  <ul className="list-disc ml-[20px]">
+                    <li>
+                      <Para2
+                        paraClass={
+                          "!text-[#494336] !text-sm md:!text-base lg:!text-lg !mt-0"
+                        }
+                        para2={items.para}
+                      />
+                    </li>
+                  </ul>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </>
