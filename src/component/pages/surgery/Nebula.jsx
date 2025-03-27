@@ -7,7 +7,7 @@ function Nebula() {
   return (
     <>
       <div className="bg-[#fff] py-[60px] lg:py-[80px]">
-        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px]">
+        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto">
           <H5heading
             h5Class={"!text-[#494336] text-2xl md:text-3xl lg:text-4xl"}
             h5heading={"Why Choose Nebula Vets for Your Pet's Surgery:"}

@@ -263,14 +263,6 @@ export const digitaldata = [
   },
 ];
 
-export const workData = [
-  {
-    title: "How it works",
-    para: "We understand that time is of the essence when it comes to your pet's health, and waiting for medications to be obtained from an external pharmacy can be inconvenient. By keeping a comprehensive inventory of commonly used medications in our pharmacy, we strive to streamline the process and minimize any delays in providing your pet with the necessary treatment.",
-    para2:
-      "However, if a specific medication is not readily available in our on-site pharmacy, we have a solution. We work closely with a trusted compounding pharmacy that specializes in creating customized medications. This allows us to quickly obtain or create the specific medication your pet needs. Once the medication is compounded, we can arrange for it to be delivered to you, ensuring that you have it in a timely manner. ",
-  },
-];
 export const pharamcyData = [
   {
     title: "Convenience",
@@ -302,21 +294,6 @@ export const pharamcyData = [
   },
 ];
 
-export const petData = [
-  {
-    title: "Does my pet need a pre-consultation?",
-    title2: "How much will it cost?",
-    title3: "Do you accept insurance?",
-
-    para: "Yes, by conducting a pre-operative consultation, performing a physical examination, and considering bloodwork results, we can minimize the risks associated with surgery and optimize the outcome for your beloved pet. Your pet's safety and well-being are our top priorities throughout the entire surgical process.",
-    para2:
-      "Surgery costs can vary based on several factors, including the specific procedure your pet requires, their weight, any necessary medications, and additional considerations. To provide you with an accurate estimate for your pet's surgery, we recommend booking a pre-surgical consultation with our experienced veterinarians.",
-    para3:
-      "If you prefer, you can also reach out to us via email at nebulavets@gmail.comto request an estimate. Please provide us with as much information as possible about your pet's condition and the specific procedure they may need. Our team will review your request and respond promptly with an estimate based on the information provided.",
-    para4:
-      "Yes, at Nebula Vets, we accept all forms of pet insurance. We understand the importance of financial support when it comes to your pet's healthcare needs. By accepting various pet insurance providers, we aim to make the reimbursement process as seamless as possible for our clients.",
-  },
-];
 export const nebulaData = [
   {
     title: "Expert Surgical Team",
@@ -1082,6 +1059,43 @@ export const snapData = [
       {
         title: "SNAP Feline proBNP Test ",
         para: "Add description",
+      },
+    ],
+  },
+];
+export const workData = [
+  {
+    title: "How it works",
+    subdata: [
+      {
+        para: "We understand that time is of the essence when it comes to your pet's health, and waiting for medications to be obtained from an external pharmacy can be inconvenient. By keeping a comprehensive inventory of commonly used medications in our pharmacy, we strive to streamline the process and minimize any delays in providing your pet with the necessary treatment.",
+      },
+      {
+        para: "However, if a specific medication is not readily available in our on-site pharmacy, we have a solution. We work closely with a trusted compounding pharmacy that specializes in creating customized medications. This allows us to quickly obtain or create the specific medication your pet needs. Once the medication is compounded, we can arrange for it to be delivered to you, ensuring that you have it in a timely manner.",
+      },
+    ],
+  },
+];
+export const servicenebulaData = [
+  {
+    title: "Experience Exceptional Pharmacy Services at Nebula Vets:",
+    para: "Your pet's health and well-being are our top priorities, and our pharmacy is an integral part of our commitment to providing comprehensive veterinary care. Trust in the expertise of our pharmacy team to ensure your pet receives the highest standard of pharmaceutical services and products.",
+  },
+];
+export const petData = [
+  {
+    title: "Does my pet need a pre-consultation?",
+    para: "Yes, by conducting a pre-operative consultation, performing a physical examination, and considering bloodwork results, we can minimize the risks associated with surgery and optimize the outcome for your beloved pet. Your pet's safety and well-being are our top priorities throughout the entire surgical process.",
+    subdata: [
+      {
+        title: "How much will it cost?",
+        para: "Surgery costs can vary based on several factors, including the specific procedure your pet requires, their weight, any necessary medications, and additional considerations. To provide you with an accurate estimate for your pet's surgery, we recommend booking a pre-surgical consultation with our experienced veterinarians.",
+        para2:
+          "If you prefer, you can also reach out to us via email at nebulavets@gmail.comto request an estimate. Please provide us with as much information as possible about your pet's condition and the specific procedure they may need. Our team will review your request and respond promptly with an estimate based on the information provided.",
+      },
+      {
+        title: "Do you accept insurance?",
+        para: "Yes, at Nebula Vets, we accept all forms of pet insurance. We understand the importance of financial support when it comes to your pet's healthcare needs. By accepting various pet insurance providers, we aim to make the reimbursement process as seamless as possible for our clients.",
       },
     ],
   },

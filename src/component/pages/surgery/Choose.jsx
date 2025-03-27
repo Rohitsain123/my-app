@@ -5,7 +5,7 @@ function Choose() {
   return (
     <>
       <div className="bg-[rgba(215,217,221,0.50);] py-[60px] lg:py-[80px]">
-        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[1220px] xl:px-[180px] mx-auto">
+        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto">
           {vetsData.map((item, index) => (
             <div key={index}>
               <h5 className="text-2xl md:text-3xl lg:tex-4xl text-[#494336]">
