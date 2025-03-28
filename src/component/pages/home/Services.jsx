@@ -13,10 +13,13 @@ function Services() {
           {ourservicesData.map((item, index) => (
             <div key={index} className="max-w-[770px]">
               <H5heading
-                h5Class={"text-2xl md:text-3xl lg:text-5xl !text-[#494336]"}
+                h5Class={"!text-2xl md:!text-3xl lg:!text-5xl !text-[#494336]"}
                 h5heading={item.title}
               />
-              <Para2 para2={item.para} />
+              <Para2
+                paraClass={"!text-sm md:!text-base lg:!text-lg !text-[#494336]"}
+                para2={item.para}
+              />
               <Booklink booklink={item.learnbtn} />
             </div>
           ))}

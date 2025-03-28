@@ -11,16 +11,23 @@ function Mission() {
           {ourapporachData.map((item, index) => (
             <div
               key={index}
-              className=" flex felx-wrap md:flex-nowrap items-center gap-10"
+              className=" flex flex-wrap md:flex-nowrap items-center gap-[10px] md:gap-10"
             >
               <div>
                 <H5heading
-                  h5Class={"text-2xl md:text-3xl lg:text-4xl !text-[#494336]"}
+                  h5Class={
+                    "!text-2xl md:!text-3xl lg:!text-4xl !text-[#494336]"
+                  }
                   h5heading={item.title}
                 />
               </div>
               <div>
-                <Para2 para2={item.para} />
+                <Para2
+                  paraClass={
+                    "!text-[#494336] !text-sm md:!text-base lg:!text-xl !mt-0"
+                  }
+                  para2={item.para}
+                />
               </div>
             </div>
           ))}

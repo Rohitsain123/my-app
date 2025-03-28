@@ -1,3 +1,5 @@
+import H5heading from "@/component/common/H5heading";
+import Para2 from "@/component/common/Para2";
 import { spayData } from "@/component/helper/Helper";
 import Image from "next/image";
 import React from "react";
@@ -18,34 +20,23 @@ function Spay() {
         <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto">
           {spayData.map((item, index) => (
             <div key={index}>
-              <h5 className="text-2xl md:text-3xl lg:text-4xl text-[#494336]">
-                {item.title}
-              </h5>
-              <p className="text-sm md:text-base lg:text-lg mt-[25px]">
-                {item.para}
-              </p>{" "}
-              <p className="text-sm md:text-base lg:text-lg mt-[25px]">
-                {item.para2}
-              </p>{" "}
-              <p className="text-sm md:text-base lg:text-lg  ">{item.para3}</p>
-              <h5 className="text-2xl md:text-3xl lg:text-4xl text-[#494336] mt-[25px]">
-                {item.title2}
-              </h5>{" "}
-              <p className="text-sm md:text-base lg:text-lg mt-[25px]">
-                {item.para4}
-              </p>{" "}
-              <p className="text-sm md:text-base lg:text-lg mt-[25px]">
-                {item.para5}
-              </p>{" "}
-              <p className="text-sm md:text-base lg:text-lg mt-[25px]">
-                {item.para6}
-              </p>{" "}
-              <h5 className="text-2xl md:text-3xl lg:text-4xl text-[#494336] mt-[25px]">
-                {item.title3}
-              </h5>{" "}
-              <p className="text-sm md:text-base lg:text-lg mt-[25px]">
-                {item.para7}
-              </p>{" "}
+              <H5heading
+                h5Class={"!text-[#494336] text-2xl md:text-3xl lg:text-4xl"}
+                h5heading={item.title}
+              />
+              {item.subdata.map((items, i) => (
+                <div key={i}>
+                  <H5heading
+                    h5Class={
+                      "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
+                    }
+                    h5heading={items.title}
+                  />
+                  <Para2 para2={items.para} />
+                  <Para2 para2={items.para2} />
+                  <Para2 para2={items.para3} />
+                </div>
+              ))}
             </div>
           ))}
         </div>

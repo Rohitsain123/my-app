@@ -1,4 +1,5 @@
 import H5heading from "@/component/common/H5heading";
+import Para from "@/component/common/Para";
 import Para2 from "@/component/common/Para2";
 import { hospiceData } from "@/component/helper/Helper";
 import Image from "next/image";
@@ -8,7 +9,7 @@ function Service() {
   return (
     <>
       <div className="bg-[rgba(215,217,221,0.50);] py-[60px] lg:py-[80px] relative">
-        <div className="w-full absolute bottom-0">
+        <div className="w-full absolute bottom-0 z-[-1]">
           <Image
             className="w-full"
             src={"/assetes/img/png/line7.png"}
@@ -24,42 +25,26 @@ function Service() {
                 h5Class={"!text-[#494336] text-2xl md:text-3xl lg:text-4xl"}
                 h5heading={item.title}
               />
-              <Para2 paraClass={""} para2={item.para} />{" "}
-              <H5heading
-                h5Class={
-                  "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
-                }
-                h5heading={item.title2}
+              <Para2
+                paraClass={"!text-[#494336] !text-sm md:!text-base lg:!text-lg"}
+                para2={item.para}
               />
-              <Para2 paraClass={""} para2={item.para2} />{" "}
-              <H5heading
-                h5Class={
-                  "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
-                }
-                h5heading={item.title3}
-              />
-              <Para2 paraClass={""} para2={item.para3} />{" "}
-              <H5heading
-                h5Class={
-                  "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
-                }
-                h5heading={item.title4}
-              />
-              <Para2 paraClass={""} para2={item.para4} />{" "}
-              <H5heading
-                h5Class={
-                  "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
-                }
-                h5heading={item.title5}
-              />
-              <Para2 paraClass={""} para2={item.para5} />{" "}
-              <H5heading
-                h5Class={
-                  "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
-                }
-                h5heading={item.title6}
-              />
-              <Para2 paraClass={""} para2={item.para6} />
+              {item.subdata.map((items, i) => (
+                <div key={i}>
+                  <H5heading
+                    h5Class={
+                      "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
+                    }
+                    h5heading={items.title}
+                  />
+                  <Para2
+                    paraClass={
+                      "!text-[#494336] !text-sm md:!text-base lg:!text-lg"
+                    }
+                    para2={items.para}
+                  />
+                </div>
+              ))}
             </div>
           ))}
         </div>

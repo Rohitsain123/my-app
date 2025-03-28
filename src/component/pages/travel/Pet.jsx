@@ -24,30 +24,21 @@ function Pet() {
                 h5Class={"!text-[#494336] text-2xl md:text-3xl lg:text-4xl"}
                 h5heading={item.title}
               />
-              <Para2 para2={item.para} />
-              <H5heading
-                h5Class={
-                  "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
-                }
-                h5heading={item.title2}
+              <Para2
+                paraClass={"!text-[#494336] !text-sm md:!text-base lg:!text-lg"}
+                para2={item.para}
               />
-              <Para2 para2={item.para2} />
-              <H5heading
-                h5Class={
-                  "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
-                }
-                h5heading={item.title3}
-              />
-              <Para2 para2={item.para3} />
-
-              <H5heading
-                h5Class={
-                  "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
-                }
-                h5heading={item.title4}
-              />
-              <Para2 para2={item.para5} />
-              <Para2 para2={item.para6} />
+              {item.subdata.map((items, i) => (
+                <div key={i}>
+                  <H5heading
+                    h5Class={
+                      "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
+                    }
+                    h5heading={items.title}
+                  />
+                  <Para2 para2={items.para} />
+                </div>
+              ))}
             </div>
           ))}
         </div>

@@ -1,4 +1,5 @@
 import H5heading from "@/component/common/H5heading";
+import Para from "@/component/common/Para";
 import Para2 from "@/component/common/Para2";
 import { laserData } from "@/component/helper/Helper";
 import Image from "next/image";
@@ -20,23 +21,25 @@ function Laser() {
         {laserData.map((item, index) => (
           <div key={index}>
             <H5heading
-              h5Class={"!text-[#494336] text-2xl lg:text-[28px] roboto"}
+              h5Class={
+                "!text-[#494336] text-base md:text-xl lg:text-[28px] roboto"
+              }
               h5heading={item.title}
             />
-            <H5heading
-              h5Class={
-                "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
-              }
-              h5heading={item.title2}
-            />
-            <Para2 para2={item.para} />
-            <H5heading
-              h5Class={
-                "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
-              }
-              h5heading={item.title3}
-            />
-            <Para2 para2={item.para2} />
+            {item.subdata.map((items, i) => (
+              <div key={i}>
+                <H5heading
+                  h5Class={
+                    "!text-[#494336] text-2xl md:text-3xl lg:text-4xl mt-[25px]"
+                  }
+                  h5heading={items.title}
+                />
+                <Para2
+                  paraClass={"!text-[#494336] text-sm md:text-base lg:text-lg"}
+                  para2={items.para}
+                />
+              </div>
+            ))}
           </div>
         ))}
       </div>

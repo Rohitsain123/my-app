@@ -2,7 +2,6 @@ import Booklink from "@/component/common/Booklink";
 import Mainheading from "@/component/common/Mainheading";
 import Para from "@/component/common/Para";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 function Hero() {
@@ -10,24 +9,29 @@ function Hero() {
     <>
       <div className='bg-[url("/assetes/img/png/hero.png")] bg-cover hidden md:block'>
         <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto">
-          <div className=" pt-[250px] lg:pt-[200px] pb-[60px] lg:pb-[85px]">
+          <div className=" pt-[193px] lg:pt-[200px] pb-[60px] lg:pb-[85px]">
             <Mainheading mainheading={"Welcome to Nebula Vets"} />
             <Para para={"Reinventing Pet Medicine"} />
             <Booklink booklink={"BOOK NOW"} />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(215,217,221,0.50);] pt-[150px] pb-[60px]cblock md:hidden">
+      <div className="bg-[rgba(215,217,221,0.50);] pt-[60px] pb-[-60px] block md:hidden">
         <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] mx-auto">
           <div>
-            <h1 className="text-4xl md:text5xl lg:text-[70px] text-[#494336] max-w-[511px]">
-              Welcome to Nebula Vets
-            </h1>
-            <Para para={"Reinventing Pet Medicine"} />
+            <Mainheading
+              headingClass={"!text-[#494336]"}
+              mainheading={"Welcome to Nebula Vets"}
+            />
+
+            <Para
+              pClass={"!text-[#494336]"}
+              para={"Reinventing Pet Medicine"}
+            />
             <Booklink booklink={"BOOK NOW"} />
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full mt-[-60px]">
           <Image
             className="w-full"
             src={"/assetes/img/png/res-hero.png"}
