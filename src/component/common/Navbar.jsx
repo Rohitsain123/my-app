@@ -14,11 +14,11 @@ function page() {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative z-[999]">
         <div className="bg-[#494336] py-3">
           <div className="max-w-[1440px] px-[32px] sm:px-[50px] mx-auto">
             <div className="flex items-center justify-between">
-              <div>
+              <div className="max-w-[90px] md:max-w-[120px]">
                 <Image
                   src={"/assetes/img/png/cat.png"}
                   width={120}
@@ -67,14 +67,16 @@ function page() {
             style={{ transform: show ? "translateX(0)" : "translateX(100%)" }}
           >
             <div className="flex justify-between items-center px-8 pt-3">
-              <Link href="/dental">
-                <Image
-                  src={"/assetes/img/png/cat.png"}
-                  width={120}
-                  height={70}
-                  alt="Logo"
-                />
-              </Link>
+              <div className="w-full max-w-[90px] md:max-w-[120px]">
+                <Link href="/dental">
+                  <Image
+                    src={"/assetes/img/png/cat.png"}
+                    width={90}
+                    height={70}
+                    alt="Logo"
+                  />
+                </Link>
+              </div>
               <div
                 onClick={toggle}
                 className="rotate-225 cursor-pointer pl-[20px] "

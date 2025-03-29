@@ -21,11 +21,11 @@ function Exam() {
         <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto">
           <div className="max-w-[1070px] w-full ">
             <H5heading
-              h5Class={"!text-[#494336] text-2xl md:text-3xl lg:text-4xl"}
+              h5Class={"!text-[#494336] !text-2xl md:!text-3xl lg:!text-4xl"}
               h5heading={"Animal Health Check Exam"}
             />
             <Para2
-              paraClass={"!text-sm md:!text-base lg:!text-xl"}
+              paraClass={"!text-sm md:!text-base lg:!text-xl !text-[#494336]"}
               para2={
                 "During our animal health check, we perform a thorough examination tailored to the unique needs of each patient. Our goal is to assess your pet's overall health, detect any potential issues, and offer preventive measures to maintain their vitality. Whether your furry friend is young, mature, or a senior, our veterinary professionals have the expertise to address their specific requirements."
               }

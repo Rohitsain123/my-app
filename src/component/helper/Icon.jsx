@@ -161,7 +161,7 @@ export const PlusIcon = () => {
           x2="30.0338"
           y2="15.9197"
           stroke="url(#paint0_linear_1204_1399)"
-          stroke-width="2.5"
+          strokeWidth="2.5"
         />
         <line
           x1="15.1472"
@@ -169,7 +169,7 @@ export const PlusIcon = () => {
           x2="15.1472"
           y2="0.806152"
           stroke="url(#paint1_linear_1204_1399)"
-          stroke-width="2.5"
+          strokeWidth="2.5"
         />
         <defs>
           <linearGradient
@@ -419,42 +419,42 @@ export const SurgeryIcon = () => {
         <path
           d="M18.1168 57.5948C18.1168 57.5948 39.994 48.1314 63.5117 53.0516"
           stroke="url(#paint0_linear_1204_1446)"
-          stroke-width="2"
+          strokeWidth="2"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M37.9939 32.4012C38.5695 37.001 37.6507 41.6654 35.3724 45.7077C32.8536 50.1728 28.8322 53.6064 24.019 55.3973L18.1193 57.5949L36.8777 24.322"
           stroke="url(#paint1_linear_1204_1446)"
-          stroke-width="2"
+          strokeWidth="2"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M46.215 3.1976L34.9183 23.2232L42.8693 27.6749L49.7797 15.4187"
           stroke="url(#paint2_linear_1204_1446)"
-          stroke-width="2"
+          strokeWidth="2"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M37.5047 18.6343L49.7797 15.4187"
           stroke="url(#paint3_linear_1204_1446)"
-          stroke-width="2"
+          strokeWidth="2"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M46.2153 3.1976C59.374 7.83506 68.8006 20.339 68.8006 35.0404"
           stroke="url(#paint4_linear_1204_1446)"
-          stroke-width="2"
+          strokeWidth="2"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M63.2738 53.5311C57.2201 62.7306 46.7801 68.8062 34.9185 68.8062C16.206 68.8062 1.03384 53.69 1.03384 35.0405C1.03384 18.7232 12.6494 5.10974 28.0892 1.96155"
           stroke="url(#paint5_linear_1204_1446)"
-          stroke-width="2"
+          strokeWidth="2"
           stroke-linecap="round"
           stroke-linejoin="round"
         />

@@ -1,7 +1,12 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 
 export default function AccordianCommon() {
+  const [show, setShow] = useState(false);
+  function toggle() {
+    setShow(!show);
+  }
   return (
     <>
       <div className="bg-[#fff] pb-[60px] lg:pb-[80px]">
@@ -16,6 +21,7 @@ export default function AccordianCommon() {
                   Cat Core Vaccines
                 </h2>
                 <button
+                  onClick={toggle}
                   className="accordion-button transform transition duration-300"
                   id="accordion-btn-1"
                 >
@@ -27,14 +33,16 @@ export default function AccordianCommon() {
                   />
                 </button>
               </div>
-              <div className="accordion-body hidden pb-[30px] text-gray-700 ">
-                <p className="text-lg text-[#494336]">
-                  Rabies: Legally required in most states, for both indoor and
-                  outdoor cats Feline Leukemia Virus: A virus transmitted
-                  through cat bites during fights. It’s recommended for kittens
-                  even if they will not be going outdoors.
-                </p>
-              </div>
+              {show && (
+                <div className="accordion-body hidden pb-[30px] text-gray-700 ">
+                  <p className="text-lg text-[#494336]">
+                    Rabies: Legally required in most states, for both indoor and
+                    outdoor cats Feline Leukemia Virus: A virus transmitted
+                    through cat bites during fights. It’s recommended for
+                    kittens even if they will not be going outdoors.
+                  </p>
+                </div>
+              )}
             </div>
           </div>
           <div className="w-full h-[3px] bg-[linear-gradient(90deg,#FFA280_0%,#8FD9CB_100%)]"></div>

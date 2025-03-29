@@ -16,9 +16,9 @@ function HeroCommon({
   return (
     <>
       <div
-        className={`bg-[#494336] pt-[130px] lg:pt-[250px] pb-[260px] lg:pb-[85px] relative ${heroClass}`}
+        className={`bg-[#494336] pt-[180px] lg:pt-[140px] pb-[60px] lg:pb-[85px] relative ${heroClass}`}
       >
-        <div className={`bottom-0 end-0   absolute  ${imgClass}`}>
+        <div className={`top-0 end-0 absolute  ${imgClass}`}>
           <Image
             className="w-full"
             src={heroimg}

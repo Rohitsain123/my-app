@@ -5,7 +5,7 @@ function Hero() {
   return (
     <>
       <HeroCommon
-        imgClass={"max-w-[400px] md:max-w-[528px] !relative md:absolute  "}
+        imgClass={"max-w-[400px] max-w-[211px] md:max-w-[528px]   "}
         heroimg={"/assetes/img/png/AnimalHero.png"}
         className={"max-w-[528px]"}
         title={"Animal Health Check"}
