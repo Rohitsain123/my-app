@@ -10,7 +10,7 @@ function Tests() {
   return (
     <>
       <div className="bg-[rgba(215,217,221,0.50);] pt-[60px] lg:pt-[80px] pb-[120px] lg:pb-[140px] relative">
-        <div className="absolute bottom-0">
+        <div className="absolute bottom-0 w-full">
           <Image
             className="w-full"
             src={"/assetes/img/png/line5.png"}
@@ -19,11 +19,11 @@ function Tests() {
             alt={"line4"}
           />
         </div>
-        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px]">
+        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto  relative z-[99] overflow-hidden">
           {availabletestData.map((item, index) => (
             <div key={index}>
               <H5heading
-                h5Class={"!text-[#494336] text-2xl md:text-3xl lg:text-4xl"}
+                h5Class={"!text-[#494336] !text-2xl md:!text-3xl lg:!text-4xl"}
                 h5heading={item.title}
               />
               <Para2

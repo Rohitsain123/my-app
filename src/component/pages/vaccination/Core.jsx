@@ -20,11 +20,11 @@ function Core() {
           {mypetData.map((item, index) => (
             <div key={index}>
               <H5heading
-                h5Class={"!text-[#494336] text-2xl md:text-3xl lg:text-4xl"}
+                h5Class={"!text-[#494336] !text-2xl md:!text-3xl lg:!text-4xl"}
                 h5heading={item.title}
               />
               <Para2
-                paraClass={"!text-sm md:!text-base lg:!text-lg"}
+                paraClass={"!text-sm md:!text-base lg:!text-lg !text-[#494336]"}
                 para2={item.para}
               />
               {item.subdata.map((items, i) => (
@@ -42,7 +42,9 @@ function Core() {
                     para2={items.para}
                   />
                   <Para2
-                    paraClass={"!text-sm md:!text-base lg:!text-lg  "}
+                    paraClass={
+                      "!text-sm md:!text-base lg:!text-lg !text-[#494336]"
+                    }
                     para2={items.para2}
                   />
                 </div>

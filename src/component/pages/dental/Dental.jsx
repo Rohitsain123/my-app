@@ -1,10 +1,20 @@
+"use client";
 import H5heading from "@/component/common/H5heading";
+import Para from "@/component/common/Para";
 import Para2 from "@/component/common/Para2";
 import { dentaldata } from "@/component/helper/Helper";
 import { PlusIcon } from "@/component/helper/Icon";
-import React from "react";
+import React, { useState } from "react";
 
 function Dental() {
+  const [openIndex, setOpenIndex] = useState(null);
+  function toggle(index) {
+    if (openIndex === index) {
+      setOpenIndex(null);
+    } else {
+      setOpenIndex(index);
+    }
+  }
   return (
     <>
       <div className="bg-[#fff] py-[60px] lg:py-[80px]">
@@ -15,29 +25,19 @@ function Dental() {
           />
           {dentaldata.map((item, index) => (
             <div key={index}>
-              <div className="accordion">
-                <div className="accordion-item mt-[32px]">
-                  <div
-                    className="flex justify-between items-center  pb-[30px] cursor-pointer "
-                    id="accordion-header-1"
-                  >
-                    <H5heading
-                      h5Class={
-                        "!text-base md:!text-lg lg:!text-2xl roboto !text-[#494336]"
-                      }
-                      h5heading={item.title}
-                    />
-                    <PlusIcon />
-                  </div>
-                  <div className="accordion-body hidden pb-[30px] text-gray-700 ">
-                    <Para2
-                      paraClass={"!text-[#494336] text-2xl"}
-                      para2={item.para}
-                    />
-                  </div>
+              <div className="flex items-center justify-between mt-8">
+                <Para pClass={"!text-[#494336] !mt-0"} para={item.title} />
+                <div
+                  onClick={() => toggle(index)}
+                  className={`transform transition-transform duration-300 ${
+                    openIndex === index ? "rotate-45" : ""
+                  }`}
+                >
+                  <PlusIcon />
                 </div>
               </div>
-              <div className="w-full h-[3px] bg-[linear-gradient(90deg,#FFA280_0%,#8FD9CB_100%)]"></div>
+              {openIndex === index && <Para2 para2={item.para} />}
+              <div className="w-full h-[3px] bg-[linear-gradient(90deg,#FFA280_0%,#8FD9CB_100%)] mt-8"></div>
             </div>
           ))}
         </div>

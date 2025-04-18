@@ -3,10 +3,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 export default function AccordianCommon() {
-  const [show, setShow] = useState(false);
-  function toggle() {
-    setShow(!show);
-  }
+  const [openIndex, setOpenIndex] = useState(null);
+
   return (
     <>
       <div className="bg-[#fff] pb-[60px] lg:pb-[80px]">

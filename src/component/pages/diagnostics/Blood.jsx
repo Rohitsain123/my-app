@@ -1,12 +1,22 @@
+"use client";
 import { bloodData } from "@/component/helper/Helper";
 import { PlusIcon } from "@/component/helper/Icon";
-import React from "react";
+import React, { useState } from "react";
 
 function Blood() {
+  const [openIndex, setOpenIndex] = useState(null);
+  function toggle(index) {
+    if (openIndex) {
+      setOpenIndex(null);
+    } else {
+      setOpenIndex(index);
+    }
+  }
+
   return (
     <>
       <div className="bg-[#fff] py-[60px] lg:py-[80px]">
-        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px]">
+        <div className="max-w-[1440px] px-[32px] sm:px-[80px] lg:px-[120px] xl:px-[180px] mx-auto">
           {bloodData.map((item, index) => (
             <div key={index}>
               <div className="accordion">

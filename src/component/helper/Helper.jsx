@@ -83,45 +83,45 @@ export const footerdata = [
 export const accordianData = [
   {
     title: "Core Dog Vaccines",
-    para: "lorem ienfif kdcirfirv jndiewnmvuif csdvbafhuin weuhweuifsmcn deubdv",
+    para: "FVRCP: A combination vaccine that protects against Feline Viral Rhinotracheitis, Calicivirus, and Panleukopenia.Rabies: Legally required in most states, for both indoor and outdoor catsFeline Leukemia Virus: A virus transmitted through cat bites during fights. It’s recommended for kittens even if they will not be going outdoors.",
   },
   {
     title: "Non-Core Dog Vaccines",
-    para: "",
+    para: " Bordetella: A disease more commonly known as kennel cough and is required by dog boarding and daycare facilities. Lyme: Lyme Disease is carried by ticks and can be useful for dogs that visit areas, such as woodland areas, with high tick exposure. Canine Influenza Virus: Also called dog flu, a contagious virus that causes respiratory issues.",
   },
   {
     title: "Core Cat Vaccines",
-    para: "",
+    para: " FVRCP: A combination vaccine that protects against Feline Viral Rhinotracheitis, Calicivirus, and Panleukopenia.Rabies: Legally required in most states, for both indoor and outdoor cats Feline Leukemia Virus: A virus transmitted through cat bites during fights. It’s recommended for kittens even if they will not be going outdoors.",
   },
 ];
 export const dentaldata = [
   {
     title: "Oral Health and Beyond",
-    para: "",
+    para: "Dental health plays a significant role in your pet's overall well-being. Poor oral hygiene can lead to various issues such as gum disease, tooth decay, infections, and even systemic health problems affecting vital organs. Regular dental care can prevent these issues, promoting a healthier and longer life for your furry friend.",
   },
   {
     title: "Comprehensive Dental Examinations",
-    para: "",
+    para: "Our skilled veterinarians perform thorough dental examinations, assessing your pet's teeth, gums, and oral tissues. We check for signs of dental disease, tartar buildup, tooth decay, and other oral abnormalities. This comprehensive evaluation allows us to detect potential issues early and provide timely treatment.",
   },
   {
     title: "Professional Teeth Cleaning",
-    para: "",
+    para: "Dental cleanings are an essential part of maintaining your pet's oral health. Our state-of-the-art dental equipment and techniques allow us to perform professional cleanings with precision and care. We remove plaque, tartar, and bacteria from the teeth and gum line, ensuring a fresh and clean mouth.",
   },
   {
     title: "Periodontal Disease Management",
-    para: "",
+    para: "Periodontal disease is a common dental condition in pets. We are well-equipped to manage and treat this condition. Our dental services include deep cleaning, periodontal therapy, and extraction of severely affected teeth, providing relief and restoring oral health.",
   },
   {
     title: "Tooth Extractions and Oral Surgery",
-    para: "",
+    para: "In some cases, tooth extractions or oral surgery may be necessary to address severe dental disease, fractured teeth, or other oral conditions. Our veterinarians have expertise in performing these procedures with precision and ensuring your pet's comfort throughout.",
   },
   {
     title: "Pain Management and Anesthesia",
-    para: "",
+    para: "Your pet's comfort is our priority. We utilize modern anesthesia protocols and advanced pain management techniques to ensure their safety and minimize any discomfort during dental procedures. Our experienced team closely monitors your pet throughout the process, ensuring a smooth and stress-free experience.",
   },
   {
     title: "Client Education and Home Care",
-    para: "",
+    para: "We believe in empowering pet owners with knowledge. Our dental care services include client education on proper dental hygiene at home, brushing techniques, and recommended dental care products. We provide guidance on preventive measures, diet choices, and regular dental check-ups to maintain your pet's oral health between visits.",
   },
 ];
 export const caredata = [
@@ -174,35 +174,35 @@ export const liData = [
 export const chooseData = [
   {
     title: "Immediate Access to Care",
-    para: "",
+    para: "We know that emergencies require swift action. At Nebula Vets, we prioritize providing prompt access to emergency and urgent care services. Our facility is equipped to handle a wide range of emergencies, and our experienced team is ready to address critical situations with efficiency and expertise.",
   },
   {
     title: "Skilled Veterinary Team",
-    para: "",
+    para: "Our veterinarians have extensive experience in emergency medicine and are well-versed in handling urgent and critical cases. They possess the knowledge, skills, and quick decision-making abilities necessary to provide the best possible care for your pet in emergency situations.",
   },
   {
     title: "State-of-the-Art Facilities",
-    para: "",
+    para: "Nebula Vets is equipped with advanced diagnostic equipment and medical technology to support our emergency and urgent care services. From digital radiography and ultrasound to an in-house laboratory, we have the tools needed to quickly and accurately diagnose your pet's condition, enabling us to provide appropriate and timely treatments.",
   },
   {
     title: "Compassionate and Calm Approach",
-    para: "",
+    para: "We understand that emergencies can be stressful and emotional for both you and your pet. Our veterinary team is trained to handle these situations with compassion and a calm demeanor. We prioritize providing a comforting environment to help alleviate anxiety and provide support to both you and your pet during difficult times.",
   },
   {
     title: "Comprehensive Emergency Services",
-    para: "",
+    para: "Nebula Vets offers a wide range of emergency services, including critical care, trauma management, stabilization, pain management, and advanced life-saving procedures. We are equipped to handle various emergencies, such as severe injuries, poisoning, respiratory distress, seizures, and more.",
   },
   {
     title: "Collaborative Care",
-    para: "",
+    para: "We believe in open communication and collaboration. Our team works closely with you to ensure you understand your pet's condition, treatment options, and associated costs. We provide transparent and compassionate guidance to help you make informed decisions about your pet's emergency care.",
   },
   {
     title: "Seamless Referrals",
-    para: "",
+    para: "In complex cases requiring specialized care, we maintain strong relationships with local specialty hospitals and can facilitate seamless referrals when necessary. We work together with trusted specialists to ensure your pet receives the best possible care for their specific needs.",
   },
   {
     title: "Emergency Preparedness",
-    para: "",
+    para: "We encourage pet owners to be prepared for emergencies. Keep our contact information readily available and familiarize yourself with basic first aid for pets. Prompt action and early intervention can make a significant difference in emergency situations.",
   },
 ];
 export const cardData = [
@@ -734,31 +734,31 @@ export const examData = [
 export const animalhealthData = [
   {
     title: "Early Detection and Prevention",
-    para: "",
+    para: "Regular health checks are essential for detecting and preventing potential health issues before they become more serious. By identifying subtle changes in your pet's health, we can address them promptly, potentially saving them from discomfort, pain, and costly treatments in the long run.",
   },
   {
     title: "Tailored Care for Different Life Stages",
-    para: "",
+    para: "Pets go through various life stages, each with its unique needs. From playful puppies and curious kittens to mature adults and cherished seniors, our animal health checks are tailored to cater to your pet's specific life stage. We provide age-appropriate screenings, vaccinations, and personalized recommendations to support your pet's health at every stage of their journey.",
   },
   {
     title: "Comprehensive Physical Examinations",
-    para: "",
+    para: "Our skilled veterinarians perform thorough physical examinations during animal health checks, paying attention to your pet's overall appearance, body condition, vital signs, and specific areas of concern. We examine their eyes, ears, nose, mouth, teeth, skin, coat, muscles, joints, and abdomen, ensuring a comprehensive evaluation of their health.",
   },
   {
     title: "Vaccinations and Preventive Care",
-    para: "",
+    para: "Vaccinations are crucial for protecting your pet against contagious diseases. During the animal health check, we assess your pet's vaccination status and provide any necessary boosters or updates to ensure they remain protected. Additionally, we discuss preventive care measures such as flea and tick control, heartworm prevention, and parasite control, tailoring our recommendations to your pet's individual needs.",
   },
   {
     title: "Diagnostic Screenings",
-    para: "",
+    para: "Depending on your pet's age, breed, and medical history, we may recommend diagnostic screenings as part of the animal health check. These may include blood tests, urinalysis, fecal examinations, and imaging studies. These screenings help us assess your pet's internal health, detect underlying conditions, and provide a baseline for future comparisons.",
   },
   {
     title: "Nutritional and Behavioral Guidance",
-    para: "",
+    para: "Our veterinarians understand the impact of nutrition and behavior on your pet's overall health. During the animal health check, we offer guidance on proper nutrition, diet choices, feeding schedules, and exercise routines. We also address behavioral concerns and provide recommendations to foster a harmonious bond between you and your pet.",
   },
   {
     title: "Client Education and Support",
-    para: "",
+    para: "At Nebula Vets, we believe in empowering pet owners with knowledge. Our veterinarians take the time to explain the findings of the animal health check, address your questions, and provide guidance on maintaining your pet's well-being. We are here to support you on your pet care journey and offer resources for at-home care and preventive measures.",
   },
 ];
 export const animalheathcheckData = [
